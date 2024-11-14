@@ -123,9 +123,9 @@ function home_page() {
         </div>
 
         <div className="posts mx-auto rounded-lg w-4/6">
-            {loading ? (
-              <p className="animate-spin  mt-60">
-                <ArrowPathIcon className="w-6 h-6"/>
+            {loading|true ? (
+              <p className="animate-spin w-6 h-6 mx-auto mt-60">
+                <ArrowPathIcon />
               </p>
             ) : conts.length > 0 ? (
               <div className="postslist max-h-[80vh] overflow-y-auto rounded-lg [&::-webkit-scrollbar]:w-0"
