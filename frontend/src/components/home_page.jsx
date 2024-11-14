@@ -123,7 +123,7 @@ function home_page() {
         </div>
 
         <div className="posts mx-auto rounded-lg w-4/6">
-            {loading|true ? (
+            {loading ? (
               <p className="animate-spin w-6 h-6 mx-auto mt-60">
                 <ArrowPathIcon />
               </p>
